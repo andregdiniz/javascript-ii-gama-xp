@@ -3,20 +3,16 @@
 // - Se a media for maior e igual a cinco e menor que 7 - Recuperação
 // - Se a media for menor que 5 - Reprovado|
 
-function calculaMedia(nota1,nota2,nota3) {
-    let media = (nota1 + nota2 + nota3)/3
+function calculateAverage(grade1,grade2,grade3){
 
-    if (media >= 7) {
-        return 'Aprovado'
-    }
+    let average = (grade1 + grade2 + grade3)/3;
 
-    if (media >=5 && media<7) {
-        return 'Recuperação'
-    }
+    if (average >= 7) return "Aprovado";
 
-    if (media < 5) {
-        return 'Reprovado'
-    }
+    if (average >=5 && average < 7) return "Recuperação";
+    
+    if (average < 5) return "Reprovado";
 }
 
-console.log(calculaMedia(8,5,8))
+console.log(calculateAverage(8,5,8));
+
